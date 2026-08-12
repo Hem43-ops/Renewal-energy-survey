@@ -1111,28 +1111,99 @@ function showValidationMessage() {
    14. SUBMIT SURVEY
 ========================================================= */
 
-function submitSurvey() {
 
-    /*
-       For now we simply prepare the data.
-
-       In the next stage we will send this object
-       to Google Apps Script → Google Sheets.
-    */
+async function submitSurvey() {
 
     const responseData =
         prepareResponseData();
 
 
-    console.log(
-        "SURVEY RESPONSE:",
-        responseData
-    );
+    /*
+     * IMPORTANT:
+     * Replace the URL below with YOUR
+     * Google Apps Script Web App URL.
+     */
+
+    const GOOGLE_SCRIPT_URL =https://script.google.com/macros/s/AKfycbzbkQAh7-EFLuIJEJs2bUBu60YS4TSI2KZgqJzPLQRNGDMlRpjUEp_0rXG_kusT_g/exec;
 
 
-    showScreen(thankYouScreen);
+    /* -----------------------------------------
+       Disable button while submitting
+    ----------------------------------------- */
+
+    nextButton.disabled = true;
+
+    nextButton.innerHTML =
+        "Submitting...";
+
+
+    try {
+
+        /* -----------------------------------------
+           SEND DATA TO GOOGLE APPS SCRIPT
+        ----------------------------------------- */
+
+        await fetch(
+            GOOGLE_SCRIPT_URL,
+            {
+                method: "POST",
+
+                headers: {
+                    "Content-Type":
+                        "text/plain;charset=utf-8"
+                },
+
+                body: JSON.stringify(
+                    responseData
+                )
+            }
+        );
+
+
+        /* -----------------------------------------
+           SUCCESS
+        ----------------------------------------- */
+
+        console.log(
+            "Survey submitted successfully!"
+        );
+
+        console.log(
+            responseData
+        );
+
+
+        showScreen(
+            thankYouScreen
+        );
+
+
+    } catch (error) {
+
+        /* -----------------------------------------
+           ERROR
+        ----------------------------------------- */
+
+        console.error(
+            "Submission error:",
+            error
+        );
+
+
+        alert(
+            "Something went wrong while submitting your response. Please try again."
+        );
+
+
+        nextButton.disabled = false;
+
+        nextButton.innerHTML =
+            "Submit <span>✓</span>";
+
+    }
 
 }
+
 
 
 /* =========================================================
