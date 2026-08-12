@@ -1124,14 +1124,14 @@ async function submitSurvey() {
      * Google Apps Script Web App URL.
      */
 
-    const GOOGLE_SCRIPT_URL =https://script.google.com/macros/s/AKfycbzbkQAh7-EFLuIJEJs2bUBu60YS4TSI2KZgqJzPLQRNGDMlRpjUEp_0rXG_kusT_g/exec;
+    const GOOGLE_SCRIPT_URL =
+    "https://script.google.com/macros/s/AKfycbzbkQAh7-EFLuIJEJs2bUBu60YS4TSI2KZgqJzPLQRNGDMlRpjUEp_0rXG_kusT_g/exec";
 
 
     /* -----------------------------------------
        Disable button while submitting
     ----------------------------------------- */
-
-    nextButton.disabled = true;
+ nextButton.disabled = true;
 
     nextButton.innerHTML =
         "Submitting...";
