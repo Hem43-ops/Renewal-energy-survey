@@ -1,4 +1,4 @@
-```javascript
+
 /* =========================================================
    NEPAL RENEWABLE ENERGY SURVEY
    Main JavaScript File
@@ -12,7 +12,7 @@
 const questions = [
 
     // -----------------------------------------
-    // SECTION 1 — ABOUT YOU
+    // SECTION 1 — ABOUT YOU-m
     // -----------------------------------------
 
     {
@@ -1207,4 +1207,4 @@ window.addEventListener(
 
     }
 );
-```
+
