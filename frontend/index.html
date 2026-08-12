@@ -1,0 +1,215 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nepal's Energy Future | Survey</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BACKGROUND DECORATION
+    ========================== -->
+
+    <div class="background">
+        <div class="blob blob-one"></div>
+        <div class="blob blob-two"></div>
+        <div class="blob blob-three"></div>
+    </div>
+
+
+    <!-- =========================
+         MAIN APPLICATION
+    ========================== -->
+
+    <main class="survey-container">
+
+        <!-- =========================
+             WELCOME SCREEN
+        ========================== -->
+
+        <section id="welcome-screen" class="screen active">
+
+            <div class="welcome-icon">
+                🌱
+            </div>
+
+            <p class="small-label">
+                A RESEARCH SURVEY
+            </p>
+
+            <h1>
+                Nepal's Energy
+                <span>Future</span>
+            </h1>
+
+            <p class="welcome-description">
+                How do you think Nepal should power its future?
+                Your opinion can help us understand people's views
+                on renewable energy and sustainability.
+            </p>
+
+            <div class="survey-info">
+
+                <div class="info-item">
+                    <span>⚡</span>
+                    <div>
+                        <strong>32 Questions</strong>
+                        <small>Quick & interactive</small>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span>⏱️</span>
+                    <div>
+                        <strong>4–6 Minutes</strong>
+                        <small>Your time matters</small>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span>🇳🇵</span>
+                    <div>
+                        <strong>For Nepal</strong>
+                        <small>Energy & sustainability</small>
+                    </div>
+                </div>
+
+            </div>
+
+            <button id="start-btn" class="primary-btn">
+                Start Survey
+                <span>→</span>
+            </button>
+
+            <p class="privacy-note">
+                🔒 Your responses will be used for academic research.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             QUESTION SCREEN
+        ========================== -->
+
+        <section id="question-screen" class="screen">
+
+            <!-- Progress -->
+            <div class="progress-section">
+
+                <div class="progress-top">
+                    <span id="section-name">
+                        About You
+                    </span>
+
+                    <span id="question-counter">
+                        1 / 32
+                    </span>
+                </div>
+
+                <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+
+            </div>
+
+
+            <!-- Question -->
+            <div class="question-card">
+
+                <p id="question-number">
+                    QUESTION 01
+                </p>
+
+                <h2 id="question-text">
+                    What is your age group?
+                </h2>
+
+                <!-- Options will be inserted here by JavaScript -->
+                <div id="options-container"></div>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <div class="navigation">
+
+                <button id="back-btn" class="secondary-btn">
+                    ← Back
+                </button>
+
+                <button id="next-btn" class="primary-btn">
+                    Next
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             THANK YOU SCREEN
+        ========================== -->
+
+        <section id="thank-you-screen" class="screen">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <p class="small-label">
+                SURVEY COMPLETED
+            </p>
+
+            <h1>
+                Thank <span>You!</span>
+            </h1>
+
+            <p class="welcome-description">
+                Your response has been recorded successfully.
+                Thank you for contributing to our research on
+                Nepal's renewable energy future.
+            </p>
+
+            <div class="thank-you-message">
+                🌱 Every response helps us understand
+                Nepal's energy future better.
+            </div>
+
+            <button id="restart-btn" class="secondary-btn">
+                Take Survey Again
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
