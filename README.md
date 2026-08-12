@@ -42,30 +42,6 @@ Respondents answer one question at a time through a modern web interface. Their 
 * ☁️ Google Apps Script backend
 * 🎉 Animated completion screen
 
----
-
-## 🧩 Project Structure
-
-```text
-nepal-renewable-energy-survey/
-│
-├── index.html
-│   └── Main survey interface
-│
-├── style.css
-│   └── Design, animations, layout and responsive styles
-│
-├── script.js
-│   └── Questions, navigation, validation and data submission
-│
-└── README.md
-    └── Project documentation
-```
-
-The Google Apps Script backend is maintained separately in Google Apps Script.
-
----
-
 ## 🛠️ Technologies Used
 
 ### Frontend
@@ -86,167 +62,7 @@ The Google Apps Script backend is maintained separately in Google Apps Script.
 ### Hosting
 
 * GitHub Pages
-
----
-
-## 🔄 How the System Works
-
-```text
-                 👤 Respondent
-                       │
-                       ▼
-             ┌──────────────────┐
-             │  Interactive Web │
-             │      Survey      │
-             └────────┬─────────┘
-                      │
-                      ▼
-             ┌──────────────────┐
-             │   JavaScript     │
-             │ Collects Answers │
-             └────────┬─────────┘
-                      │
-                 HTTP POST
-                      │
-                      ▼
-             ┌──────────────────┐
-             │ Google Apps      │
-             │     Script       │
-             └────────┬─────────┘
-                      │
-                      ▼
-             ┌──────────────────┐
-             │  Google Sheets   │
-             │ Research Dataset │
-             └──────────────────┘
-```
-
----
-
-## 📋 Questionnaire Design
-
-The questionnaire contains approximately **32 questions** divided into several sections.
-
-### Section 1 — About You
-
-Collects basic demographic information such as:
-
-* Age group
-* Gender
-* Location
-* Occupation
-* Household income
-
-### Section 2 — Energy Habits
-
-Explores:
-
-* Primary electricity source
-* Awareness of renewable technologies
-* Current renewable-energy usage
-* Electricity-saving habits
-* Major household electricity-consuming activities
-
-### Section 3 — Awareness & Sustainability
-
-Examines:
-
-* Renewable-energy knowledge
-* Perception of Nepal's renewable-energy potential
-* Preferred renewable-energy sources
-* Importance of sustainability
-* Perceived energy challenges
-
-### Section 4 — Economics of Renewable Energy
-
-Focuses on:
-
-* Initial installation cost
-* Long-term savings
-* Government subsidies
-* Financing
-* Payment preferences
-* Willingness to pay
-* Economic barriers
-
-### Section 5 — Nepal's Energy Future
-
-Examines respondents' expectations regarding:
-
-* Future renewable-energy adoption
-* Government priorities
-* Personal willingness to switch to renewable energy
-* Economic opportunities from renewable energy
-
-### Section 6 — Energy Investment Challenge
-
-Contains scenario-based questions designed to explore economic decision-making.
-
-### Section 7 — Stay Connected
-
-Contains optional questions about:
-
-* Personal interests
-* Future research/project participation
-* Optional WhatsApp contact
-* Additional opinions
-
----
-
-## 📊 Data Collection
-
-Responses are automatically stored in a Google Sheet.
-
-Each respondent generates a new row containing:
-
-```text
-Timestamp
-Q1
-Q2
-Q3
-...
-Q32
-```
-
-Multiple-choice answers are stored together using a separator:
-
-```text
-Hydropower | Solar energy | Biogas
-```
-
-This makes the dataset easier to process later using:
-
-* Excel
-* Python
-* Pandas
-* Statistical analysis tools
-* Data visualization tools
-
----
-
-## 🔬 Planned Research Analysis
-
-The collected dataset can be used to investigate relationships such as:
-
-### Research Question 1
-
-> Does household income influence willingness to adopt renewable energy?
-
-### Research Question 2
-
-> Does renewable-energy awareness influence willingness to invest?
-
-### Research Question 3
-
-> Does government subsidy influence renewable-energy adoption intention?
-
-### Research Question 4
-
-> What are the major economic barriers to renewable-energy adoption in Nepal?
-
-### Research Question 5
-
-> Which renewable-energy source is perceived to have the greatest potential in Nepal?
+* site is live at https://hem43-ops.github.io/Renewal-energy-survey/
 
 ---
 
@@ -277,56 +93,6 @@ Economic Analysis
 
 ---
 
-## 🚀 Deployment
-
-The frontend can be hosted using **GitHub Pages**.
-
-The backend is deployed as a **Google Apps Script Web App**.
-
-The deployed architecture is:
-
-```text
-GitHub Pages
-     │
-     │
-     ▼
-index.html
-style.css
-script.js
-     │
-     │ POST
-     ▼
-Google Apps Script Web App
-     │
-     ▼
-Google Sheets
-```
-
----
-
-## ⚙️ Local Setup
-
-Clone the repository:
-
-```bash
-git clone YOUR_REPOSITORY_URL
-```
-
-Move into the project:
-
-```bash
-cd nepal-renewable-energy-survey
-```
-
-Open:
-
-```text
-index.html
-```
-
-in a browser.
-
----
 
 ## 🔐 Privacy
 
@@ -376,7 +142,7 @@ Possible future improvements include:
 ## 👨‍💻 Project Status
 
 **Status:** 🚧 Active Development
-
+ site is live at https://hem43-ops.github.io/Renewal-energy-survey/
 The current version supports:
 
 > **Interactive Survey → Google Apps Script → Google Sheets**
