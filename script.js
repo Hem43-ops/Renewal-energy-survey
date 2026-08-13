@@ -57,20 +57,20 @@ const questions = [
         ]
     },
 
-    {
-        section: "About You",
-        question: "What best describes you?",
-        type: "choice",
-        options: [
-            "Student",
-            "Salaried employee",
-            "Business owner",
-            "Farmer",
-            "Self-employed",
-            "Homemaker",
-            "Other"
-        ]
-    },
+    // {
+    //     section: "About You",
+    //     question: "What best describes you?",
+    //     type: "choice",
+    //     options: [
+    //         "Student",
+    //         "Salaried employee",
+    //         "Business owner",
+    //         "Farmer",
+    //         "Self-employed",
+    //         "Homemaker",
+    //         "Other"
+    //     ]
+    // },
 
     {
         section: "About You",
@@ -211,18 +211,18 @@ const questions = [
         ]
     },
 
-    {
-        section: "Awareness & Sustainability",
-        question: "How important is environmental sustainability when choosing an energy source?",
-        type: "scale",
-        options: [
-            "1 — Not important",
-            "2",
-            "3 — Moderately important",
-            "4",
-            "5 — Extremely important"
-        ]
-    },
+    // {
+    //     // section: "Awareness & Sustainability",
+    //     // question: "How important is environmental sustainability when choosing an energy source?",
+    //     // type: "scale",
+    //     // options: [
+    //     //     "1 — Not important",
+    //     //     "2",
+    //     //     "3 — Moderately important",
+    //     //     "4",
+    //     //     "5 — Extremely important"
+    //     ]
+    // },
 
     {
         section: "Awareness & Sustainability",
@@ -273,20 +273,20 @@ const questions = [
         ]
     },
 
-    {
-        section: "Economics of Renewable Energy",
-        question: "Which factor would influence your decision to purchase a renewable-energy system the MOST?",
-        type: "choice",
-        options: [
-            "Lower electricity bills",
-            "Lower purchase / installation cost",
-            "Government subsidy",
-            "Environmental benefits",
-            "Reliability",
-            "Long-term savings",
-            "Recommendation from friends / family"
-        ]
-    },
+    // {
+    //     section: "Economics of Renewable Energy",
+    //     question: "Which factor would influence your decision to purchase a renewable-energy system the MOST?",
+    //     type: "choice",
+    //     options: [
+    //         "Lower electricity bills",
+    //         "Lower purchase / installation cost",
+    //         "Government subsidy",
+    //         "Environmental benefits",
+    //         "Reliability",
+    //         "Long-term savings",
+    //         "Recommendation from friends / family"
+    //     ]
+    // },
 
     {
         section: "Economics of Renewable Energy",
@@ -300,19 +300,19 @@ const questions = [
         ]
     },
 
-    {
-        section: "Economics of Renewable Energy",
-        question: "How much additional money would you be willing to pay for an energy solution that is environmentally friendly and provides long-term savings?",
-        type: "choice",
-        options: [
-            "Nothing extra",
-            "Up to 5%",
-            "5–10%",
-            "10–20%",
-            "More than 20%",
-            "Depends on the expected savings"
-        ]
-    },
+    // {
+    //     section: "Economics of Renewable Energy",
+    //     question: "How much additional money would you be willing to pay for an energy solution that is environmentally friendly and provides long-term savings?",
+    //     type: "choice",
+    //     options: [
+    //         "Nothing extra",
+    //         "Up to 5%",
+    //         "5–10%",
+    //         "10–20%",
+    //         "More than 20%",
+    //         "Depends on the expected savings"
+    //     ]
+    // },
 
     {
         section: "Economics of Renewable Energy",
@@ -389,18 +389,18 @@ const questions = [
         ]
     },
 
-    {
-        section: "Nepal's Energy Future",
-        question: "How strongly do you agree with this statement: 'Renewable energy is not only an environmental solution but also an economic opportunity for Nepal.'",
-        type: "scale",
-        options: [
-            "1 — Strongly disagree",
-            "2",
-            "3 — Neutral",
-            "4",
-            "5 — Strongly agree"
-        ]
-    },
+    // {
+    //     section: "Nepal's Energy Future",
+    //     question: "How strongly do you agree with this statement: 'Renewable energy is not only an environmental solution but also an economic opportunity for Nepal.'",
+    //     type: "scale",
+    //     options: [
+    //         "1 — Strongly disagree",
+    //         "2",
+    //         "3 — Neutral",
+    //         "4",
+    //         "5 — Strongly agree"
+    //     ]
+    // },
 
 
     // -----------------------------------------
