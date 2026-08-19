@@ -489,14 +489,49 @@ function showValidationMessage() {
 // -----------------------------
 // Submit survey
 // -----------------------------
-function submitSurvey() {
+async function submitSurvey() {
+
     const responseData = prepareResponseData();
 
     console.log("SURVEY RESPONSE:", responseData);
 
-    // At this stage the survey is only preparing/logging the data.
-    // Google Apps Script submission can be connected here.
-    showScreen(thankYouScreen);
+    const SCRIPT_URL =
+        "https://script.google.com/macros/s/AKfycbyJ-fdeu9XhMC_OhVjFLfQnzSnK_XQeBAqRzfKmcxvjv0_T8fexZ9LHuFF65VkGNwA_/exec";
+
+    try {
+
+        nextButton.disabled = true;
+        nextButton.innerHTML = "Submitting...";
+
+        const response = await fetch(SCRIPT_URL, {
+    method: "POST",
+    body: JSON.stringify(responseData)
+});
+
+const result = await response.json();
+
+if (result.status !== "success") {
+    throw new Error(result.message || "Server rejected the response.");
+}
+
+console.log("Survey submitted successfully:", result);
+showScreen(thankYouScreen);
+
+        console.log("Survey submitted successfully.");
+
+        showScreen(thankYouScreen);
+
+    } catch (error) {
+
+        console.error("Submission failed:", error);
+
+        nextButton.disabled = false;
+        nextButton.innerHTML = `Submit <span>✓</span>`;
+
+        alert(
+            "Sorry, your response could not be submitted. Please try again."
+        );
+    }
 }
 
 // -----------------------------
